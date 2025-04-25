@@ -1,4 +1,4 @@
-This is a Chrome Extension to Download VSIX ( Visual Studio Extension Packages ) directlly from the web @ https://marketplace.visualstudio.com/
+This is a Chrome Extension to Download VSIX ( Visual Studio Extension Packages ) directly from the web @ https://marketplace.visualstudio.com/
 
 why ? becasue when you click install it defualts to install in VS Code and cant download the package directly.
 
