@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "VSCode Extension Downloader",
+  "version": "1.0",
+  "description": "Download VSCode extensions directly from the marketplace",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://marketplace.visualstudio.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://marketplace.visualstudio.com/items*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
+
+
+
+
+
+
+

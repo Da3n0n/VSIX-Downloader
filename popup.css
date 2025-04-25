@@ -1,0 +1,111 @@
+body {
+  background: #181a20;
+  color: #eaeaea;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 18px 16px 16px 16px;
+  min-width: 260px;
+  min-height: 220px;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px #000a;
+}
+
+#extensionInfo {
+  margin-bottom: 18px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+select {
+  width: 100%;
+  padding: 10px 36px 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #23262f;
+  color: #eaeaea;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 8px #0003;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+select:focus {
+  background: #2a2d37;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #3b82f6;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #0003;
+}
+
+button:disabled {
+  background: #23262f;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.version-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.version-btn {
+  background: #23262f;
+  color: #eaeaea;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-align: left;
+}
+
+.version-btn.selected,
+.version-btn:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #23262f;
+}
+::-webkit-scrollbar-thumb {
+  background: #23262f;
+  border-radius: 8px;
+}
